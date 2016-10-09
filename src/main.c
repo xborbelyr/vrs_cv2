@@ -5,6 +5,12 @@ int main(void)
 {
   int i = 0;
 
+  //Nastavenie GPIO periférie pre user button (PC13)
+  RCC_AHBPeriphClockCmd(RCC_AHBPeriph_GPIOC, ENABLE);
+  GPIOC->MODER &=~ (uint32_t)((0b11)<<(13*2));
+  GPIOC->OTYPER &=~ ((uint32_t)((0b11)<<(13*2)));
+  GPIOC->PUPDR &=~ (uint32_t)((0b11)<<(13*2));
+
   while (1)
   {
 	i++;
