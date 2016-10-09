@@ -4,6 +4,7 @@
 int main(void)
 {
   int i = 0;
+  int button;
 
   //Nastavenie GPIO periférie pre user button (PC13)
   RCC_AHBPeriphClockCmd(RCC_AHBPeriph_GPIOC, ENABLE);
@@ -13,7 +14,12 @@ int main(void)
 
   while (1)
   {
-	i++;
+	  if (((((uint16_t)GPIOC->IDR) >> 13) & 0b01) == 0){
+		  button=0;
+	  }else{
+		  button=1;
+	  }
+	  i++;
   }
   return 0;
 }
