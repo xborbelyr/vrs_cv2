@@ -1,6 +1,8 @@
 #include <stddef.h>
 #include "stm32l1xx.h"
 
+void delay(unsigned int time);
+
 int main(void)
 {
   int i = 0;
@@ -14,17 +16,16 @@ int main(void)
 
   while (1)
   {
-	  GPIOA->ODR |=(uint16_t)((0b1)<<5);
-	  GPIOA->ODR &=~((uint16_t)((0b1)<<5));
-	  GPIOA->BSRRL |=(uint16_t)((0b1)<<5);
-	  GPIOA->BSRRL &=~((uint16_t)((0b1)<<5));
-	  GPIOA->BSRRH |=(uint16_t)((0b1)<<5);
-	  GPIOA->BSRRH &=~((uint16_t)((0b1)<<5));
 	  GPIOA->ODR ^= (uint16_t)((0b1)<<(5));
+	  delay(700000);
 	  GPIOA->ODR ^= (uint16_t)((0b1)<<(5));
-	  i++;
+	  delay(700000);
   }
   return 0;
+}
+
+void delay(unsigned int time) {
+	for (time; time > 0; time--);
 }
 
 #ifdef  USE_FULL_ASSERT
