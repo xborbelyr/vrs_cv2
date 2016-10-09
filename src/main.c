@@ -4,6 +4,12 @@
 int main(void)
 {
 
+	//Nastavenie GPIO periférie pre zelenú led (PA5)
+	RCC_AHBPeriphClockCmd(RCC_AHBPeriph_GPIOA, ENABLE);
+	GPIOA->MODER |= (uint32_t)((0b01)<<(5*2));
+	GPIOA->OTYPER &= ~((uint16_t)(0b1)<<5);
+	GPIOA->PUPDR |= (uint32_t)((0b01)<<(5*2));
+	GPIOA->OSPEEDR |= (uint32_t)((0b11)<<(5*2));
 
 	//Nastavenie GPIO periférie pre user button (PC13)
 	RCC_AHBPeriphClockCmd(RCC_AHBPeriph_GPIOC, ENABLE);
@@ -14,9 +20,9 @@ int main(void)
 	while (1)
 	{
 		if (((((uint16_t)GPIOC->IDR) >> 13) & 0b01) == 0){
-
+			GPIOA->ODR |=(uint16_t)((0b1)<<5);
 		}else{
-
+			GPIOA->ODR &=~((uint16_t)((0b1)<<5));
 		}
 	}
 
