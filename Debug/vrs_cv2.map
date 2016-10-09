@@ -1620,7 +1620,7 @@ LOAD c:/program files (x86)/atollic/truestudio for arm 6.0.0/armtools/bin/../lib
                 0x08000000                g_pfnVectors
                 0x0800013c                . = ALIGN (0x4)
 
-.text           0x0800013c      0x3cc
+.text           0x0800013c      0x3ec
                 0x0800013c                . = ALIGN (0x4)
  *(.text)
  .text          0x0800013c       0x40 c:/program files (x86)/atollic/truestudio for arm 6.0.0/armtools/bin/../lib/gcc/arm-atollic-eabi/5.3.1/armv7-m/crtbegin.o
@@ -1628,171 +1628,171 @@ LOAD c:/program files (x86)/atollic/truestudio for arm 6.0.0/armtools/bin/../lib
  .text.RCC_AHBPeriphClockCmd
                 0x0800017c       0x3c Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_rcc.o
                 0x0800017c                RCC_AHBPeriphClockCmd
- .text.main     0x080001b8       0xb4 src\main.o
+ .text.main     0x080001b8       0xd4 src\main.o
                 0x080001b8                main
  .text.Reset_Handler
-                0x0800026c       0x50 src\startup_stm32l1xx_hd.o
-                0x0800026c                Reset_Handler
+                0x0800028c       0x50 src\startup_stm32l1xx_hd.o
+                0x0800028c                Reset_Handler
  .text.Default_Handler
-                0x080002bc        0x2 src\startup_stm32l1xx_hd.o
-                0x080002bc                RTC_Alarm_IRQHandler
-                0x080002bc                EXTI2_IRQHandler
-                0x080002bc                COMP_ACQ_IRQHandler
-                0x080002bc                TIM10_IRQHandler
-                0x080002bc                USB_HP_IRQHandler
-                0x080002bc                TIM6_IRQHandler
-                0x080002bc                PVD_IRQHandler
-                0x080002bc                SDIO_IRQHandler
-                0x080002bc                EXTI3_IRQHandler
-                0x080002bc                EXTI0_IRQHandler
-                0x080002bc                I2C2_EV_IRQHandler
-                0x080002bc                SPI1_IRQHandler
-                0x080002bc                USB_FS_WKUP_IRQHandler
-                0x080002bc                DMA2_Channel2_IRQHandler
-                0x080002bc                DMA1_Channel4_IRQHandler
-                0x080002bc                ADC1_IRQHandler
-                0x080002bc                USART3_IRQHandler
-                0x080002bc                DMA1_Channel7_IRQHandler
-                0x080002bc                LCD_IRQHandler
-                0x080002bc                UART5_IRQHandler
-                0x080002bc                TIM4_IRQHandler
-                0x080002bc                DMA2_Channel1_IRQHandler
-                0x080002bc                I2C1_EV_IRQHandler
-                0x080002bc                DMA1_Channel6_IRQHandler
-                0x080002bc                UART4_IRQHandler
-                0x080002bc                DMA2_Channel4_IRQHandler
-                0x080002bc                TIM3_IRQHandler
-                0x080002bc                RCC_IRQHandler
-                0x080002bc                DMA1_Channel1_IRQHandler
-                0x080002bc                Default_Handler
-                0x080002bc                EXTI15_10_IRQHandler
-                0x080002bc                TIM7_IRQHandler
-                0x080002bc                TIM5_IRQHandler
-                0x080002bc                EXTI9_5_IRQHandler
-                0x080002bc                TIM9_IRQHandler
-                0x080002bc                TAMPER_STAMP_IRQHandler
-                0x080002bc                RTC_WKUP_IRQHandler
-                0x080002bc                SPI2_IRQHandler
-                0x080002bc                DMA2_Channel5_IRQHandler
-                0x080002bc                DMA1_Channel5_IRQHandler
-                0x080002bc                USB_LP_IRQHandler
-                0x080002bc                EXTI4_IRQHandler
-                0x080002bc                DMA1_Channel3_IRQHandler
-                0x080002bc                COMP_IRQHandler
-                0x080002bc                WWDG_IRQHandler
-                0x080002bc                TIM2_IRQHandler
-                0x080002bc                DAC_IRQHandler
-                0x080002bc                EXTI1_IRQHandler
-                0x080002bc                AES_IRQHandler
-                0x080002bc                TIM11_IRQHandler
-                0x080002bc                USART2_IRQHandler
-                0x080002bc                I2C2_ER_IRQHandler
-                0x080002bc                DMA1_Channel2_IRQHandler
-                0x080002bc                FLASH_IRQHandler
-                0x080002bc                USART1_IRQHandler
-                0x080002bc                SPI3_IRQHandler
-                0x080002bc                I2C1_ER_IRQHandler
-                0x080002bc                DMA2_Channel3_IRQHandler
- *fill*         0x080002be        0x2 
+                0x080002dc        0x2 src\startup_stm32l1xx_hd.o
+                0x080002dc                RTC_Alarm_IRQHandler
+                0x080002dc                EXTI2_IRQHandler
+                0x080002dc                COMP_ACQ_IRQHandler
+                0x080002dc                TIM10_IRQHandler
+                0x080002dc                USB_HP_IRQHandler
+                0x080002dc                TIM6_IRQHandler
+                0x080002dc                PVD_IRQHandler
+                0x080002dc                SDIO_IRQHandler
+                0x080002dc                EXTI3_IRQHandler
+                0x080002dc                EXTI0_IRQHandler
+                0x080002dc                I2C2_EV_IRQHandler
+                0x080002dc                SPI1_IRQHandler
+                0x080002dc                USB_FS_WKUP_IRQHandler
+                0x080002dc                DMA2_Channel2_IRQHandler
+                0x080002dc                DMA1_Channel4_IRQHandler
+                0x080002dc                ADC1_IRQHandler
+                0x080002dc                USART3_IRQHandler
+                0x080002dc                DMA1_Channel7_IRQHandler
+                0x080002dc                LCD_IRQHandler
+                0x080002dc                UART5_IRQHandler
+                0x080002dc                TIM4_IRQHandler
+                0x080002dc                DMA2_Channel1_IRQHandler
+                0x080002dc                I2C1_EV_IRQHandler
+                0x080002dc                DMA1_Channel6_IRQHandler
+                0x080002dc                UART4_IRQHandler
+                0x080002dc                DMA2_Channel4_IRQHandler
+                0x080002dc                TIM3_IRQHandler
+                0x080002dc                RCC_IRQHandler
+                0x080002dc                DMA1_Channel1_IRQHandler
+                0x080002dc                Default_Handler
+                0x080002dc                EXTI15_10_IRQHandler
+                0x080002dc                TIM7_IRQHandler
+                0x080002dc                TIM5_IRQHandler
+                0x080002dc                EXTI9_5_IRQHandler
+                0x080002dc                TIM9_IRQHandler
+                0x080002dc                TAMPER_STAMP_IRQHandler
+                0x080002dc                RTC_WKUP_IRQHandler
+                0x080002dc                SPI2_IRQHandler
+                0x080002dc                DMA2_Channel5_IRQHandler
+                0x080002dc                DMA1_Channel5_IRQHandler
+                0x080002dc                USB_LP_IRQHandler
+                0x080002dc                EXTI4_IRQHandler
+                0x080002dc                DMA1_Channel3_IRQHandler
+                0x080002dc                COMP_IRQHandler
+                0x080002dc                WWDG_IRQHandler
+                0x080002dc                TIM2_IRQHandler
+                0x080002dc                DAC_IRQHandler
+                0x080002dc                EXTI1_IRQHandler
+                0x080002dc                AES_IRQHandler
+                0x080002dc                TIM11_IRQHandler
+                0x080002dc                USART2_IRQHandler
+                0x080002dc                I2C2_ER_IRQHandler
+                0x080002dc                DMA1_Channel2_IRQHandler
+                0x080002dc                FLASH_IRQHandler
+                0x080002dc                USART1_IRQHandler
+                0x080002dc                SPI3_IRQHandler
+                0x080002dc                I2C1_ER_IRQHandler
+                0x080002dc                DMA2_Channel3_IRQHandler
+ *fill*         0x080002de        0x2 
  .text.NMI_Handler
-                0x080002c0        0xc src\stm32l1xx_it.o
-                0x080002c0                NMI_Handler
+                0x080002e0        0xc src\stm32l1xx_it.o
+                0x080002e0                NMI_Handler
  .text.HardFault_Handler
-                0x080002cc        0x8 src\stm32l1xx_it.o
-                0x080002cc                HardFault_Handler
+                0x080002ec        0x8 src\stm32l1xx_it.o
+                0x080002ec                HardFault_Handler
  .text.MemManage_Handler
-                0x080002d4        0x8 src\stm32l1xx_it.o
-                0x080002d4                MemManage_Handler
+                0x080002f4        0x8 src\stm32l1xx_it.o
+                0x080002f4                MemManage_Handler
  .text.BusFault_Handler
-                0x080002dc        0x8 src\stm32l1xx_it.o
-                0x080002dc                BusFault_Handler
+                0x080002fc        0x8 src\stm32l1xx_it.o
+                0x080002fc                BusFault_Handler
  .text.UsageFault_Handler
-                0x080002e4        0x8 src\stm32l1xx_it.o
-                0x080002e4                UsageFault_Handler
+                0x08000304        0x8 src\stm32l1xx_it.o
+                0x08000304                UsageFault_Handler
  .text.SVC_Handler
-                0x080002ec        0xc src\stm32l1xx_it.o
-                0x080002ec                SVC_Handler
+                0x0800030c        0xc src\stm32l1xx_it.o
+                0x0800030c                SVC_Handler
  .text.DebugMon_Handler
-                0x080002f8        0xc src\stm32l1xx_it.o
-                0x080002f8                DebugMon_Handler
+                0x08000318        0xc src\stm32l1xx_it.o
+                0x08000318                DebugMon_Handler
  .text.PendSV_Handler
-                0x08000304        0xc src\stm32l1xx_it.o
-                0x08000304                PendSV_Handler
+                0x08000324        0xc src\stm32l1xx_it.o
+                0x08000324                PendSV_Handler
  .text.SysTick_Handler
-                0x08000310        0xc src\stm32l1xx_it.o
-                0x08000310                SysTick_Handler
+                0x08000330        0xc src\stm32l1xx_it.o
+                0x08000330                SysTick_Handler
  .text.SystemInit
-                0x0800031c       0x68 src\system_stm32l1xx.o
-                0x0800031c                SystemInit
+                0x0800033c       0x68 src\system_stm32l1xx.o
+                0x0800033c                SystemInit
  .text.SetSysClock
-                0x08000384      0x120 src\system_stm32l1xx.o
+                0x080003a4      0x120 src\system_stm32l1xx.o
  .text.__libc_init_array
-                0x080004a4       0x4c c:/program files (x86)/atollic/truestudio for arm 6.0.0/armtools/bin/../lib/gcc/arm-atollic-eabi/5.3.1/../../../../arm-atollic-eabi/lib/armv7-m\libc_nano.a(lib_a-init.o)
-                0x080004a4                __libc_init_array
+                0x080004c4       0x4c c:/program files (x86)/atollic/truestudio for arm 6.0.0/armtools/bin/../lib/gcc/arm-atollic-eabi/5.3.1/../../../../arm-atollic-eabi/lib/armv7-m\libc_nano.a(lib_a-init.o)
+                0x080004c4                __libc_init_array
  *(.glue_7)
- .glue_7        0x080004f0        0x0 linker stubs
+ .glue_7        0x08000510        0x0 linker stubs
  *(.glue_7t)
- .glue_7t       0x080004f0        0x0 linker stubs
+ .glue_7t       0x08000510        0x0 linker stubs
  *(.eh_frame)
- .eh_frame      0x080004f0        0x0 c:/program files (x86)/atollic/truestudio for arm 6.0.0/armtools/bin/../lib/gcc/arm-atollic-eabi/5.3.1/armv7-m/crtbegin.o
+ .eh_frame      0x08000510        0x0 c:/program files (x86)/atollic/truestudio for arm 6.0.0/armtools/bin/../lib/gcc/arm-atollic-eabi/5.3.1/armv7-m/crtbegin.o
  *(.init)
- .init          0x080004f0        0x4 c:/program files (x86)/atollic/truestudio for arm 6.0.0/armtools/bin/../lib/gcc/arm-atollic-eabi/5.3.1/armv7-m/crti.o
-                0x080004f0                _init
- .init          0x080004f4        0x8 c:/program files (x86)/atollic/truestudio for arm 6.0.0/armtools/bin/../lib/gcc/arm-atollic-eabi/5.3.1/armv7-m/crtn.o
+ .init          0x08000510        0x4 c:/program files (x86)/atollic/truestudio for arm 6.0.0/armtools/bin/../lib/gcc/arm-atollic-eabi/5.3.1/armv7-m/crti.o
+                0x08000510                _init
+ .init          0x08000514        0x8 c:/program files (x86)/atollic/truestudio for arm 6.0.0/armtools/bin/../lib/gcc/arm-atollic-eabi/5.3.1/armv7-m/crtn.o
  *(.fini)
- .fini          0x080004fc        0x4 c:/program files (x86)/atollic/truestudio for arm 6.0.0/armtools/bin/../lib/gcc/arm-atollic-eabi/5.3.1/armv7-m/crti.o
-                0x080004fc                _fini
- .fini          0x08000500        0x8 c:/program files (x86)/atollic/truestudio for arm 6.0.0/armtools/bin/../lib/gcc/arm-atollic-eabi/5.3.1/armv7-m/crtn.o
-                0x08000508                . = ALIGN (0x4)
-                0x08000508                _etext = .
+ .fini          0x0800051c        0x4 c:/program files (x86)/atollic/truestudio for arm 6.0.0/armtools/bin/../lib/gcc/arm-atollic-eabi/5.3.1/armv7-m/crti.o
+                0x0800051c                _fini
+ .fini          0x08000520        0x8 c:/program files (x86)/atollic/truestudio for arm 6.0.0/armtools/bin/../lib/gcc/arm-atollic-eabi/5.3.1/armv7-m/crtn.o
+                0x08000528                . = ALIGN (0x4)
+                0x08000528                _etext = .
 
-.vfp11_veneer   0x08000508        0x0
- .vfp11_veneer  0x08000508        0x0 linker stubs
+.vfp11_veneer   0x08000528        0x0
+ .vfp11_veneer  0x08000528        0x0 linker stubs
 
-.v4_bx          0x08000508        0x0
- .v4_bx         0x08000508        0x0 linker stubs
+.v4_bx          0x08000528        0x0
+ .v4_bx         0x08000528        0x0 linker stubs
 
-.iplt           0x08000508        0x0
- .iplt          0x08000508        0x0 c:/program files (x86)/atollic/truestudio for arm 6.0.0/armtools/bin/../lib/gcc/arm-atollic-eabi/5.3.1/armv7-m/crtbegin.o
+.iplt           0x08000528        0x0
+ .iplt          0x08000528        0x0 c:/program files (x86)/atollic/truestudio for arm 6.0.0/armtools/bin/../lib/gcc/arm-atollic-eabi/5.3.1/armv7-m/crtbegin.o
 
-.rel.dyn        0x08000508        0x0
- .rel.iplt      0x08000508        0x0 c:/program files (x86)/atollic/truestudio for arm 6.0.0/armtools/bin/../lib/gcc/arm-atollic-eabi/5.3.1/armv7-m/crtbegin.o
+.rel.dyn        0x08000528        0x0
+ .rel.iplt      0x08000528        0x0 c:/program files (x86)/atollic/truestudio for arm 6.0.0/armtools/bin/../lib/gcc/arm-atollic-eabi/5.3.1/armv7-m/crtbegin.o
 
-.rodata         0x08000508        0x0
-                0x08000508                . = ALIGN (0x4)
+.rodata         0x08000528        0x0
+                0x08000528                . = ALIGN (0x4)
  *(.rodata)
  *(.rodata*)
-                0x08000508                . = ALIGN (0x4)
+                0x08000528                . = ALIGN (0x4)
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
 
-.ARM            0x08000508        0x0
-                0x08000508                __exidx_start = .
+.ARM            0x08000528        0x0
+                0x08000528                __exidx_start = .
  *(.ARM.exidx*)
-                0x08000508                __exidx_end = .
+                0x08000528                __exidx_end = .
 
-.preinit_array  0x08000508        0x0
-                0x08000508                PROVIDE (__preinit_array_start, .)
+.preinit_array  0x08000528        0x0
+                0x08000528                PROVIDE (__preinit_array_start, .)
  *(.preinit_array*)
-                0x08000508                PROVIDE (__preinit_array_end, .)
+                0x08000528                PROVIDE (__preinit_array_end, .)
 
-.init_array     0x08000508        0x4
-                0x08000508                PROVIDE (__init_array_start, .)
+.init_array     0x08000528        0x4
+                0x08000528                PROVIDE (__init_array_start, .)
  *(SORT(.init_array.*))
  *(.init_array*)
- .init_array    0x08000508        0x4 c:/program files (x86)/atollic/truestudio for arm 6.0.0/armtools/bin/../lib/gcc/arm-atollic-eabi/5.3.1/armv7-m/crtbegin.o
-                0x0800050c                PROVIDE (__init_array_end, .)
+ .init_array    0x08000528        0x4 c:/program files (x86)/atollic/truestudio for arm 6.0.0/armtools/bin/../lib/gcc/arm-atollic-eabi/5.3.1/armv7-m/crtbegin.o
+                0x0800052c                PROVIDE (__init_array_end, .)
 
-.fini_array     0x0800050c        0x4
+.fini_array     0x0800052c        0x4
                 [!provide]                PROVIDE (__fini_array_start, .)
  *(SORT(.fini_array.*))
  *(.fini_array*)
- .fini_array    0x0800050c        0x4 c:/program files (x86)/atollic/truestudio for arm 6.0.0/armtools/bin/../lib/gcc/arm-atollic-eabi/5.3.1/armv7-m/crtbegin.o
+ .fini_array    0x0800052c        0x4 c:/program files (x86)/atollic/truestudio for arm 6.0.0/armtools/bin/../lib/gcc/arm-atollic-eabi/5.3.1/armv7-m/crtbegin.o
                 [!provide]                PROVIDE (__fini_array_end, .)
-                0x08000510                _sidata = LOADADDR (.data)
+                0x08000530                _sidata = LOADADDR (.data)
 
-.data           0x20000000        0x0 load address 0x08000510
+.data           0x20000000        0x0 load address 0x08000530
                 0x20000000                . = ALIGN (0x4)
                 0x20000000                _sdata = .
  *(.data)
@@ -1800,11 +1800,11 @@ LOAD c:/program files (x86)/atollic/truestudio for arm 6.0.0/armtools/bin/../lib
                 0x20000000                . = ALIGN (0x4)
                 0x20000000                _edata = .
 
-.igot.plt       0x20000000        0x0 load address 0x08000510
+.igot.plt       0x20000000        0x0 load address 0x08000530
  .igot.plt      0x20000000        0x0 c:/program files (x86)/atollic/truestudio for arm 6.0.0/armtools/bin/../lib/gcc/arm-atollic-eabi/5.3.1/armv7-m/crtbegin.o
                 0x20000000                . = ALIGN (0x4)
 
-.bss            0x20000000       0x1c load address 0x08000510
+.bss            0x20000000       0x1c load address 0x08000530
                 0x20000000                _sbss = .
                 0x20000000                __bss_start__ = _sbss
  *(.bss)
@@ -1816,7 +1816,7 @@ LOAD c:/program files (x86)/atollic/truestudio for arm 6.0.0/armtools/bin/../lib
                 0x2000001c                __bss_end__ = _ebss
 
 ._user_heap_stack
-                0x2000001c      0x400 load address 0x08000510
+                0x2000001c      0x400 load address 0x08000530
                 0x2000001c                . = ALIGN (0x4)
                 [!provide]                PROVIDE (end, .)
                 [!provide]                PROVIDE (_end, .)
@@ -1892,12 +1892,12 @@ OUTPUT(vrs_cv2.elf elf32-littlearm)
  .debug_ranges  0x00000178       0x50 src\stm32l1xx_it.o
  .debug_ranges  0x000001c8       0x20 src\system_stm32l1xx.o
 
-.debug_line     0x00000000      0xb74
+.debug_line     0x00000000      0xb7e
  .debug_line    0x00000000      0x521 Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_rcc.o
- .debug_line    0x00000521      0x1d6 src\main.o
- .debug_line    0x000006f7       0x7c src\startup_stm32l1xx_hd.o
- .debug_line    0x00000773      0x1e7 src\stm32l1xx_it.o
- .debug_line    0x0000095a      0x21a src\system_stm32l1xx.o
+ .debug_line    0x00000521      0x1e0 src\main.o
+ .debug_line    0x00000701       0x7c src\startup_stm32l1xx_hd.o
+ .debug_line    0x0000077d      0x1e7 src\stm32l1xx_it.o
+ .debug_line    0x00000964      0x21a src\system_stm32l1xx.o
 
 .debug_str      0x00000000      0x91c
  .debug_str     0x00000000      0x6c8 Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_rcc.o
