@@ -5,6 +5,13 @@ int main(void)
 {
   int i = 0;
 
+  //Nastavenie GPIO periférie pre zelenú led (PA5)
+  RCC_AHBPeriphClockCmd(RCC_AHBPeriph_GPIOA, ENABLE);
+  GPIOA->MODER |= (uint32_t)((0b01)<<(5*2));
+  GPIOA->OTYPER &= ~((uint16_t)(0b1)<<5);
+  GPIOA->PUPDR |= (uint32_t)((0b01)<<(5*2));
+  GPIOA->OSPEEDR |= (uint32_t)((0b11)<<(5*2));
+
   while (1)
   {
 	i++;
